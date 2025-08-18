@@ -16,6 +16,11 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
       "edgeToEdgeEnabled": true
     },
     "web": {
@@ -33,6 +38,21 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "アプリが写真にアクセスすることを許可しますか？",
+          "cameraPermission": "アプリがカメラにアクセスすることを許可しますか？"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "アプリが写真にアクセスすることを許可しますか？",
+          "savePhotosPermission": "アプリが写真を保存することを許可しますか？",
+          "isAccessMediaLocationEnabled": true
+                }
       ]
     ],
     "experiments": {
